@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Sample Player</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!--Start of Container For Movie Posters-->
+    <div class="container">
+        <h1 class="header"> This is a Spotify Sampler. 
+            <br>Click an image to play a sample from the artist.</h1>
+
+        <div class="gallery"> 
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getSong(this.id, event)" >
+                <img class="gallery__img" src="images/ed.jpg" alt="celestial">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/jamie.jpg" alt="if anything's left">
+            </figure>
+
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/charlie.png" alt="left and right">
+            </figure>
+
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/cian.jpeg" alt="i'll be waiting">
+            </figure>
+
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/giveon.jpeg" alt="for tonight">
+            </figure>
+
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/iu.jpg" alt="eight">
+            </figure>
+        </div>
+        <div class="buttoncontain">
+            <button onclick="stopSnippit()">Stop Song</button>
+        </div>
+    </div>
+    
+</body>
+</html>
