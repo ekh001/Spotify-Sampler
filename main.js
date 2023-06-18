@@ -4,10 +4,10 @@ let playSong;
 
 // ----------------------------------------
 // Spotify Client Credentialies:
-const clientId = 'e62bddd6c7224bf9a0ddc5fbfa6445e4';
-const clientSecret = '107cb5f65acc4e0b82aba4d9fdb52575';
+const clientId = '#';
+const clientSecret = '#';
 
-// Token stuff:
+// Token:
 const _getToken = async () => {
     const result = await fetch(`https://accounts.spotify.com/api/token`, {
         method: 'POST',
@@ -19,7 +19,6 @@ const _getToken = async () => {
     });
 
     // Access the data given to us by the fetch response:
-    // This is a Promise. You can only use async and await with promises.
     const data = await result.json();
     return data.access_token
 }
